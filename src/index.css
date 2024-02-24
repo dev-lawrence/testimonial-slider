@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #e6e6e6;
+}
+
+/* Testimonial container */
+.testimonial-container {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.testimonial-container .title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.testimonial-container .section-title {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.7rem;
+  line-height: 1.1;
+}
+
+/* Slider container */
+.slider-container {
+  position: relative;
+  user-select: none;
+}
+
+.slider-container .quote {
+  position: absolute;
+  z-index: -1;
+}
+
+.slider-container .top-quote {
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+}
+
+.slider-container .bottom-quote {
+  position: absolute;
+  bottom: -3rem;
+  right: -1rem;
+  transform: rotate(180deg);
+}
+
+.slider-container img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.content {
+  margin-left: 1rem;
+}
+
+.slider-container .content .text {
+  color: #484646;
+  margin-bottom: 1rem;
+}
+
+.slider-container .content .rating {
+  display: inline-block;
+  line-height: 1;
+}
+
+.slider-container .content .star {
+  color: #ff6f59;
+  font-size: 1.1rem;
+}
+
+.slider-container .content .user {
+  font-weight: 600;
+}
+
+.splide__slide {
+  display: flex;
+}
