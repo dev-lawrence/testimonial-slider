@@ -13,10 +13,6 @@ img {
 
 body {
   font-family: 'Poppins', sans-serif;
-  display: grid;
-  place-items: center;
-  height: 100vh;
-  width: 100%;
   background-color: #f6f6f6;
 }
 
@@ -24,14 +20,18 @@ body {
 .testimonial-container {
   max-width: 800px;
   margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
 
-.testimonial-container .title {
+.title {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
-.testimonial-container .section-title {
+.title h2 {
   text-transform: capitalize;
   font-weight: bold;
   font-size: 1.7rem;
@@ -42,6 +42,7 @@ body {
 .slider-container {
   position: relative;
   user-select: none;
+  padding-inline: 1rem;
 }
 
 .slider-container .quote {
@@ -58,7 +59,7 @@ body {
 .slider-container .bottom-quote {
   position: absolute;
   bottom: -3rem;
-  right: -1rem;
+  right: -0.5rem;
   transform: rotate(180deg);
 }
 
@@ -68,6 +69,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
+  margin-inline: auto;
 }
 
 /* Splide customization */
@@ -136,4 +138,24 @@ body {
 
 .slider-container .content .user {
   font-weight: 600;
+}
+
+/* Media Query */
+@media (max-width: 576px) {
+  .splide__slide {
+    display: block;
+    text-align: center;
+  }
+
+  .splide__arrow--prev {
+    left: 0.5rem;
+  }
+
+  .splide__arrow--next {
+    right: 0.5rem;
+  }
+
+  .slider-container .bottom-quote {
+    right: 0;
+  }
 }

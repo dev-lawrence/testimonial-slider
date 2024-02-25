@@ -1,13 +1,13 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import { reviews } from './data/review';
-import Quote from './assets/top-blockquote.svg';
+import Quote from './assets/blockquote.svg';
 
 const Testimonials = () => {
   return (
-    <section className="testimonial-container pt-section">
+    <section className="testimonial-container">
       <div className="title">
-        <h2 className="section-title">Testimonial</h2>
+        <h2>Testimonial</h2>
         <p>What members are saying.</p>
       </div>
 
@@ -20,6 +20,9 @@ const Testimonials = () => {
         <Splide
           options={{
             perPage: 1,
+            autoplay: true,
+            speed: 1000,
+            drag: 'snap',
           }}
         >
           {reviews.map((review) => (
