@@ -22,7 +22,8 @@ const Testimonials = () => {
             perPage: 1,
             autoplay: true,
             speed: 1000,
-            drag: 'snap',
+            rewind: true,
+            rewindByDrag: true,
           }}
         >
           {reviews.map((review) => (
