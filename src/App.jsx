@@ -1,4 +1,4 @@
-import Testimonials from './Testimonials';
+import Testimonials from './components/Testimonials';
 
 const App = () => {
   return (

@@ -1,7 +1,7 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import { reviews } from './reviewsData';
-import Quote from './assets/blockquote.svg';
+import Quote from '../assets/blockquote.svg';
 
 const Testimonials = () => {
   return (
