@@ -83,10 +83,7 @@ body {
   background-color: #fff;
   padding: 3rem 1.875rem;
   border-radius: 1rem;
-}
-
-.content {
-  margin-left: 1rem;
+  gap: 1rem;
 }
 
 .slider-container .content .text {
@@ -115,13 +112,11 @@ body {
 
 .splide__arrow {
   position: absolute;
-  cursor: pointer;
   background-color: transparent;
   border: none;
   font-size: 2rem;
   color: #505050;
   font-weight: 300;
-  z-index: 1;
 }
 
 .splide__arrow--prev {
